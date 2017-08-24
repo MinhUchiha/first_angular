@@ -1,0 +1,5 @@
+<md-select placeholder="Author" [(ngModel)]="author" name="author" (change)="emitChangeValue($event)">
+  <md-option *ngFor="let select of authorlist" [value]="select">
+    {{select.name}}
+  </md-option>
+</md-select>
